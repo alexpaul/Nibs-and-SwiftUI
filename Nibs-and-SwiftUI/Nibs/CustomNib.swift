@@ -11,6 +11,8 @@ class CustomNib: UIView {
 
     @IBOutlet var containerView: UIView!
 
+    @IBOutlet weak var toggle: UISwitch!
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
@@ -47,4 +49,9 @@ class CustomNib: UIView {
             containerView.heightAnchor.constraint(equalTo: containerView.widthAnchor)
         ])
     }
+
+    @IBAction func toggleChanged(_ sender: UISwitch) {
+        backgroundColor = sender.isOn ? .white : .black
+    }
+
 }

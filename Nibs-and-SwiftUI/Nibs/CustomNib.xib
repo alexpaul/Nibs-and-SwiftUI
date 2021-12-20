@@ -11,14 +11,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNib" customModule="Nibs_and_SwiftUI" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="vFe-EF-ne5" id="OWJ-6J-HPD"/>
+                <outlet property="toggle" destination="BBT-0b-Wxo" id="XA8-kz-keL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="vFe-EF-ne5">
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-0b-Wxo">
+                    <rect key="frame" x="125.5" y="134.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="toggleChanged:" destination="-1" eventType="valueChanged" id="0Ov-Ha-Ynw"/>
+                    </connections>
+                </switch>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="UPV-Dz-M6H"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="BBT-0b-Wxo" firstAttribute="centerX" secondItem="vFe-EF-ne5" secondAttribute="centerX" id="LzI-GR-srt"/>
+                <constraint firstItem="BBT-0b-Wxo" firstAttribute="centerY" secondItem="vFe-EF-ne5" secondAttribute="centerY" id="MqD-3K-eob"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-99" y="98"/>
         </view>
