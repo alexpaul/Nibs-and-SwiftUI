@@ -67,7 +67,7 @@
 				57C1EC2727713D6500A1D033 /* Controllers */,
 				57C1EC2627713D4700A1D033 /* Nibs */,
 				57C1EC2827713D8700A1D033 /* SwiftUI Views */,
-				57C1EC2927713D9A00A1D033 /* UIKit Views */,
+				57C1EC2927713D9A00A1D033 /* UIViewRepresentable Views */,
 				57C1EC0E27712D7600A1D033 /* Main.storyboard */,
 				57C1EC2A27713DA700A1D033 /* Supporting Files */,
 				57C1EC1127712D7800A1D033 /* Assets.xcassets */,
@@ -102,12 +102,12 @@
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
 		};
-		57C1EC2927713D9A00A1D033 /* UIKit Views */ = {
+		57C1EC2927713D9A00A1D033 /* UIViewRepresentable Views */ = {
 			isa = PBXGroup;
 			children = (
 				57C1EC2427713D1D00A1D033 /* SomeNibView.swift */,
 			);
-			path = "UIKit Views";
+			path = "UIViewRepresentable Views";
 			sourceTree = "<group>";
 		};
 		57C1EC2A27713DA700A1D033 /* Supporting Files */ = {
