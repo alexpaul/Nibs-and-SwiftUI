@@ -18,3 +18,10 @@ struct SomeNibView: UIViewRepresentable {
     }
 }
 ```
+
+The embedded view with the `UISwitch` below was created as a nib file. The project demos a `UIHostingController` and the nib fully integrated with functionality in SwiftUI.
+
+
+https://user-images.githubusercontent.com/1819208/146846178-beb5ed30-38c5-4229-bbc2-a012f0792114.mp4
+
+
