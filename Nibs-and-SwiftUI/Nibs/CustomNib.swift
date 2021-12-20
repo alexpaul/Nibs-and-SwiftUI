@@ -21,25 +21,23 @@ class CustomNib: UIView {
         super.init(frame: frame)
 
         commonInit()
-
-        containerViewConstraints()
     }
 
     convenience init() {
         self.init(frame: UIScreen.main.bounds)
 
         commonInit()
-
-        containerViewConstraints()
     }
 
     private func commonInit() {
         Bundle.main.loadNibNamed("CustomNib", owner: self, options: nil)
 
-        addSubview(containerView)
+        containerViewConstraints()
     }
 
     private func containerViewConstraints() {
+        addSubview(containerView)
+
         containerView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
