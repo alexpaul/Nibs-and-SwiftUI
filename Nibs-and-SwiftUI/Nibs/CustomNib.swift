@@ -11,8 +11,6 @@ class CustomNib: UIView {
 
     @IBOutlet var containerView: UIView!
 
-    @IBOutlet weak var toggle: UISwitch!
-
     required init?(coder: NSCoder) {
         super.init(coder: coder)
 
